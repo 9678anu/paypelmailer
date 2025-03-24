@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>24*7 hr Customer support</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            padding: 20px;
+        }
+        .invoice-container {
+            background-color: #fff;
+            padding: 20px;
+            max-width: 600px;
+            margin: auto;
+            border: 1px solid #ddd;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .header img {
+            width: 120px;
+        }
+        .header {
+            text-align: left;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .sub-container{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #0070ba;
+
+        }
+        .support-number{
+            text-decoration: none;
+            color: #d9534f;
+            font-weight: bold;
+        }
+        .support-number:hover{
+            text-decoration: underline;
+        }
+        .invoice-details {
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+        .invoice-details strong {
+            color: #333;
+        }
+        .transaction-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        .transaction-table th, .transaction-table td {
+            /* border: 1px solid #ddd; */
+            padding: 10px;
+            text-align: center;
+        }
+        .transaction-table th {
+            background-color: #003087;
+            color: yellow;
+        }
+        .footer {
+            font-size: 13px;
+            color: #555;
+            margin-top: 20px;
+            text-align: center;
+        }
+        .footer-img{
+            width: 50px;
+            display: flex;
+            align-items: center;
+        }
+        .footer p {
+            margin: 5px 0;
+        }
+        .imag-footer{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .auto-message {
+            color: #d9534f;
+            font-size: 10px;
+            margin-top: 10px;
+            text-align: center;
+        }
+    </style>
+    <script>
+        function formatDate(date) {
+            const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+            let day = date.getDate();
+            let month = months[date.getMonth()];
+            let year = date.getFullYear();
+            return `${day} ${month}, ${year}`;
+        }
+
+        function updateDate() {
+            let currentDate = new Date();
+            let formattedDate = formatDate(currentDate);
+            document.getElementById("purchaseDate").innerText = formattedDate;
+        }
+
+        window.onload = updateDate;
+    </script>
+</head>
+<body>
+
+    <div class="invoice-container">
+        <div class="sub-container">
+        <div class="header">
+            <img src="https://1000logos.net/wp-content/uploads/2017/05/Paypal-Logo-2022.png" alt="PayPal Logo">
+        </div>
+
+        <div class="invoice-details">
+            <p><strong>Invoice ID:</strong> PPLL_#546FR222</p>
+            <p><strong>Date:</strong> Tuesday, <span id="purchaseDate">24<sup>rd</sup> March 2025</span></p>
+            <p><strong>Toll-Free:</strong><a href="tel:+1-(808)229-6305" class="support-number">+1-(808)229-6305</a></p>
+        </div></div>
+
+        <p>Dear PayPal Customer,</p>
+        <p>We're writing to inform you that an invoice for your recent purchase of <span style="font-weight: bold;">**Bitcoin (BTC)**</span> worth $499 will be generated shortly. This invoice will provide details of your transaction, including the amount and any applicable fees.</strong>. The purchased product has been sent to your digital wallet. The deduction will appear in your statement within the next 24 hours.</p>
+        <p>If you did not authorize this Bitcoin purchase, please contact our help desk immediately to cancel the transaction and initiate a refund request. Your security is our top priority.<br>☎ Customer Help-desk No. :<a href="tel:+1-(808)229-6305" class="support-number">+1-(808)229-6305</a></p>
+
+        <p><strong>Order Confirmation Ref:</strong> MCG37RY545</p>
+
+        <table class="transaction-table">
+            <tr>
+                <th></th>
+                <th>Description</th>
+                <th>Quantity</th>
+                <th>Unit Price</th>
+                <th>Total Amount</th>
+            </tr>
+            <tr>
+                <td><img src="https://media.istockphoto.com/id/882085928/vector/blockchain-bitcoin-icon-symbol-vector.jpg?s=612x612&w=0&k=20&c=uv_6f1BKQBRS8UQfz6TZTN2GoOZ--lUHojCpvGvm_4Y=" width="100px"></td>
+                <td> Bitcoin</td>
+                <td>1</td>
+                <td>$499</td>
+                <td>$499</td>
+            </tr>
+        </table>
+
+        <p>Contact our support team at:<br>☎ Customer Support:<a href="tel:+1-(808)229-6305" class="support-number">+1-(808)229-6305</a></p>
+
+
+        <div class="footer">
+            <p style="text-align: left;font-weight: bold;
+            color: black;">Sincerely,<br>Paypal Team <br>ThankYou</p>
+            <div class="imag-footer"><p><strong>Powered by</strong></p>
+                <p><img src="https://www.pngplay.com/wp-content/uploads/8/Paypal-PNG-Clipart-Background.png" class="footer-img" alt="footer-logo"></strong></p></div>
+                <p style="color: #0070ba;font-weight: bold;">Toll-Free-Number:<a href="tel:+1-(808)229-6305"style="color:#0070ba;font-weight:bold;text-decoration:none;">+1-(808)229-6305</a></p>
+
+            </div>
+
+        <p class="auto-message">This is an automated email, please do not reply. For any assistance, kindly contact our support team at the number provided</p>
+    </div>
+
+</body>
+</html>
